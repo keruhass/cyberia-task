@@ -1,0 +1,23 @@
+.projectList {
+    
+    width: fit-content;
+
+    display: grid;
+    grid-template-columns: repeat(3, 387px);
+    grid-template-rows: repeat(auto-fill, 378px);
+    row-gap: 31px;
+    column-gap: 40px;
+
+    margin: 0 auto;
+
+    // border: 1px solid white;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .projectList {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

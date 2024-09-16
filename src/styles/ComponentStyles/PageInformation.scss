@@ -1,0 +1,76 @@
+$font: 'Fira Sans Condensed';
+
+.pageInformation {
+    width: 1240px;
+    height: fit-content;
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    .pageInformation-path {
+
+        display: flex;
+
+        margin-top: 65px;
+        
+
+        .pageInformation-path-first {
+            font-family: $font;
+            font-size: 18px;
+            color: white;
+            text-align: left;
+        }
+
+        .pageInformation-path-second {
+            font-family: $font;
+            font-size: 18px;
+            color: #C4D2E3;
+            text-align: left;
+        }
+    }
+
+    .pageInformation-currentPage {
+        margin-top: 130px;
+        font-family: $font;
+        font-size: 48px;
+        color: white;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .pageInformation {
+
+        width: 375px;
+        height: fit-content;
+
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        .pageInformation-path {
+
+            display: flex;
+    
+            margin-top: 46px;
+            margin-left: 25px;
+    
+            .pageInformation-path-first {
+                font-size: 12px;
+            }
+
+            .pageInformation-path-second {
+                font-size: 12px;
+            }
+        }
+    
+        .pageInformation-currentPage {
+            margin-top: 29px;
+            margin-left: 25px;
+            font-size: 21px;
+
+        }
+    }
+}

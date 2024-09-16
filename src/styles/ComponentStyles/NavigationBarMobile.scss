@@ -1,0 +1,20 @@
+.navigationBarMobile {
+
+    width: 375px;
+    height: 68px;
+    
+    display: flex;
+    align-items: center;
+    gap: 202px;
+
+    background: #20212C;
+
+    .navigationBarMobile-logo {
+        width: 93px;
+        margin-left: 27px;
+    }
+
+    .navigationBarMobile-burgerMenuOpenButton {
+        cursor: pointer;
+    }
+}

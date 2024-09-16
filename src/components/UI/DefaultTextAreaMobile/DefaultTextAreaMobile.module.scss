@@ -1,0 +1,21 @@
+$font: 'Fira Sans Condensed';
+
+.defaultTextAreaMobile {
+
+    width: 300px;
+    height: 123px;
+
+    padding: 8px 13px 8px 13px;
+
+    background: transparent;
+    border: 1px solid #EEF3FF;
+    border-radius: 8px;
+
+    font-family: $font;
+    font-size: 13px;
+    color: #EEF3FF;
+
+    outline: none;
+
+    resize: none;
+}

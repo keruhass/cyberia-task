@@ -1,0 +1,126 @@
+$font: 'Fira Sans Condensed';
+
+.footer {
+    width: 100vw;
+    height: 396px;
+
+    background: #313341;
+
+    .footer-content {
+
+        display: flex;
+
+        position: relative;
+
+        width: 1240px;
+        height: 114px;
+
+        top: 131px;
+        left: calc(50% - 620px);
+
+        .footer-content-main {
+
+            width: 196px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+
+            a {
+                font-family: $font;
+                font-size: 18px;
+                color: white;
+                text-align: left;
+            }
+        }
+
+        .footer-content-information {
+
+            display: grid;
+            grid-template-columns: 159px 75px 72px;
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 62px;
+    
+            width: 428px;
+            height: 114px;
+    
+            margin-left: 157px;
+
+            a {
+                font-family: $font;
+                font-size: 18px;
+                color: white;
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    
+    .footer {
+
+        width: 375px;
+        height: 285px;
+
+        .footer-content {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 38px;
+    
+            position: static;
+    
+            width: 375px;
+            height: 285px;
+    
+            // top: 131px;
+            // left: calc(50% - 620px);
+    
+            .footer-content-main {
+    
+                width: 196px;
+
+                margin-top: 30px;
+    
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 28px;
+
+                img {
+                    width: 102px;
+                }
+    
+                a {
+                    font-family: $font;
+                    font-size: 13px;
+                    color: white;
+                    text-align: center;
+                }
+            }
+    
+            .footer-content-information {
+    
+                display: grid;
+                grid-template-columns: 159px 75px 72px;
+                grid-template-rows: repeat(3, 1fr);
+                grid-column-gap: 15px;
+                grid-row-gap: 23px;
+        
+                width: fit-content;
+                height: fit-content;
+        
+                margin-left: 0px;
+    
+                a {
+                    font-family: $font;
+                    font-size: 13px;
+                    color: white;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+$font: 'Fira Sans Condensed';
+$font-light: 'Fira Sans Condensed Light';
+
+.defaultButton {
+
+    padding: 10px 29px 10px 29px;
+
+    border: none;
+    border-radius: 7px;
+    background: #313341;
+    box-shadow: #171B2C69;
+    font-family: $font;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    white-space: nowrap;
+
+    transition: all 0.5s ease;
+
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width: 900px) {
+    
+    .defaultButton {
+        padding: 10px 2px 10px 2px;
+        font-size: 12px;
+    }
+
+}

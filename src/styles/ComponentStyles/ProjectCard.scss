@@ -1,0 +1,111 @@
+$font: 'Fira Sans Condensed';
+$font-light: 'Fira Sans Condensed Light';
+
+.projectCard {
+
+    width: 387px;
+    height: 378px;
+
+    border-radius: 12px;
+
+    background-position: center;
+    background-size: cover;
+
+    .projectCard-title {
+        // border: 1px solid black;
+
+        position: relative;
+
+        left: 238px;
+        top: 17px;
+
+        width: 128px;
+        height: 128px;
+
+        img {
+            position: absolute;
+            left: 103px;
+            bottom: 103px;
+        }
+
+        div {
+
+            position: absolute;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 122px;
+            height: 122px;
+
+            margin-top: 6px;
+            border-radius: 5px;
+            background: #313341;
+
+            a {
+                font-family: $font;
+                font-size: 24px;
+                // font-weight: 600;
+                color: white;
+                text-align: center;
+            }
+        }
+    }
+
+    // .projectCard-title-mobile {
+    //     display: block;
+    // }
+}
+
+@media screen and (max-width: 900px) {
+    
+    .projectCard {
+        width: 327px;
+        height: 320px;
+    }
+
+    .projectCard-title {
+        display: none;
+    }
+
+    .projectCard-title-mobile {
+
+        height: 100px;
+
+        margin-top: 220px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        background: linear-gradient(transparent, #171B2C);
+        
+
+        img {
+            margin-top: 20px;
+            margin-left: 29px;
+            width: 17px;
+        }
+        
+        a {
+            font-family: $font;
+            font-size: 18px;
+            color: white;
+            text-align: left;
+
+            margin-left: 29px;
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    
+    .projectCard-title-mobile {
+
+        display: none;
+    }
+}

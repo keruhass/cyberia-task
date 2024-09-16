@@ -1,0 +1,75 @@
+$font: 'Fira Sans Condensed';
+
+.defaultInput {
+
+    width: 1240px;
+    height: 139px;
+  
+    textarea {
+        width: 1180px;
+        height: 59px;
+
+        padding: 40px 30px 40px 30px;
+
+        border: 1px solid gray;
+        border-radius: 7px;
+        background: transparent;
+
+        font-family: $font;
+        font-size: 18px;
+        color: white;
+
+        outline: none;
+        
+        transition: all 0.3s ease;
+    }
+
+    textarea:focus {
+        border: 1px solid white;
+        color: white;
+    }
+
+    textarea:valid {
+        border: 1px solid white;
+    }
+
+    div {
+        position: relative;
+        bottom: 120px;
+        left: -543px;
+
+        transition: all 0.3s ease;
+
+        pointer-events: none;
+
+        a {
+        font-family: $font;
+        font-size: 18px;
+        color: gray;
+
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #2B2B38;
+        
+        }
+    }
+
+    textarea:focus~div {
+        bottom: 157px;
+        transition: all 0.3s ease;
+    }
+
+    textarea:valid~div {
+        bottom: 157px;
+        transition: all 0.3s ease;
+    }
+
+    textarea:focus~div a {
+        color: white;
+    }
+
+    textarea:valid~div a {
+        color: white;
+    }
+
+}

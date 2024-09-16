@@ -1,0 +1,22 @@
+.categoriesList {
+    width: 1240px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+
+    .categoriesList {
+        width: 325px;
+        height: 83px;
+
+        display: grid;
+        grid-template-columns: repeat(2, 158.7px);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 7.6px;
+        row-gap: 17px;
+    }
+}

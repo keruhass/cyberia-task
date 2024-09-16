@@ -1,0 +1,52 @@
+$font: 'Fira Sans Condensed';
+
+.userFormMobile {
+    
+    border: 1px solid transparent;
+
+    width: 375px;
+    height: 700px;
+
+    margin: 0 auto;
+
+    background: #252631;
+
+    .userFormMobile-title {
+
+
+        width: fit-content;
+
+        margin: 51px auto 0 auto;
+
+        display: flex;
+        align-items: center;
+        gap: 28px;
+
+        a {
+            font-family: $font;
+            font-size: 24px;
+            color: white;
+            text-align: left;
+        }
+    }
+
+    .userFormMobile-inputs {
+
+        width: fit-content;
+
+        margin: 37px auto 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .userFormMobile-personalData {
+        font-family: $font;
+        font-size: 13px;
+        color: white;
+        text-align: center;
+
+        margin-top: 26px;
+    }
+}

@@ -1,0 +1,64 @@
+$font: 'Fira Sans Condensed';
+
+.modalMenuMobile {
+
+    width: 375px;
+    height: 812px;
+
+    margin-top: 740px;
+
+    display: none;
+    position: fixed;
+
+    background: #24252F;
+    
+    z-index: 3;
+
+    img {
+
+        margin: 42px 0px 0px 310px;
+
+        cursor: pointer;
+    }
+
+    .modalMenuMobile-links {
+
+        width: 375px;
+        height: fit-content;
+
+        margin-top: 8px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        a {
+            font-family: $font;
+            font-size: 18px;
+            color: white;
+            text-align: left;
+            text-decoration: none;
+
+            margin-left: 24px;
+        }
+    }
+
+    .modalMenuMobile-contacts {
+        width: 303px;
+        height: 253px;
+
+        margin: 47px auto 0 auto;
+
+        display: flex;
+        flex-direction: column;
+
+        border-top: 2px solid #2B2D3A;
+        border-bottom: 2px solid #2B2D3A;
+
+        a {
+            font-family: $font;
+            color: #9AA8BA;
+            text-align: left;
+        }
+    }
+}

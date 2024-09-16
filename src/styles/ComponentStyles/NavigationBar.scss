@@ -1,0 +1,35 @@
+$font: 'Fira Sans Condensed';
+
+.navigationBar {
+
+    width: 1240px;
+    height: 37px;
+
+    display: flex;
+    align-items: center;
+    gap: 191px;
+
+    margin: 0 auto;
+
+    img {
+        width: 131px;
+    }
+    
+    .navigationBar-links {
+
+        width: 521px;
+        
+        display: flex;
+        gap: 60px;
+
+        a {
+            font-family: $font;
+            font-size: 18px;
+            text-align: left;
+            color: white;
+            text-decoration: none;
+
+            cursor: pointer;
+        }
+    }
+}
